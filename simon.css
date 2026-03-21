@@ -1,0 +1,40 @@
+h1{
+    display: flex;
+    justify-content: center;
+}
+h3{
+    display: flex;
+    justify-content: center;
+}
+#outer{
+    margin: auto;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.inside{
+height: 200px;
+width: 200px;
+border: 5px solid black;
+border-radius: 30px;
+}
+#a{
+    background-color: palevioletred
+}
+#b{
+    background-color: teal;
+}
+#c{
+    background-color: orange;
+}
+#d{
+    background-color:violet;
+}
+.inside.flash{
+    background-color: white !important;
+}
+.inside.greenflash{
+    background-color: lime !important;
+}
