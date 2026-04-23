@@ -3,7 +3,7 @@ let user=[];
 let level=0;
 let gameStarted=false;
 
-document.addEventListener("keydown",function(){
+document.addEventListener("click",function(){
     if(gameStarted==false){
         gameStarted=true;
         levelUp();
