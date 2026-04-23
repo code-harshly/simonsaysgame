@@ -1,12 +1,18 @@
-h1{
+h1 {
     display: flex;
     justify-content: center;
 }
-h3{
-    display: flex;
-    justify-content: center;
+
+h3 {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 200px;
+    text-align: center;
 }
-#outer{
+
+#outer {
     margin: auto;
     height: 500px;
     width: 500px;
@@ -14,27 +20,34 @@ h3{
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.inside{
-height: 200px;
-width: 200px;
-border: 5px solid black;
-border-radius: 30px;
+
+.inside {
+    height: 200px;
+    width: 200px;
+    border: 5px solid black;
+    border-radius: 30px;
 }
-#a{
+
+#a {
     background-color: palevioletred
 }
-#b{
+
+#b {
     background-color: teal;
 }
-#c{
+
+#c {
     background-color: orange;
 }
-#d{
-    background-color:violet;
+
+#d {
+    background-color: violet;
 }
-.inside.flash{
+
+.inside.flash {
     background-color: white !important;
 }
-.inside.greenflash{
+
+.inside.greenflash {
     background-color: lime !important;
 }
