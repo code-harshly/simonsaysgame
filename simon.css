@@ -4,12 +4,8 @@ h1 {
 }
 
 h3 {
-    position: absolute;
-    left: 5%;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 200px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 #outer {
