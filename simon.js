@@ -1,6 +1,7 @@
 let game=[];
 let user=[];
 let level=0;
+let score=0;
 let gameStarted=false;
 
 document.addEventListener("keydown",function(){
@@ -60,8 +61,9 @@ d.addEventListener("click",function(){
 function levelUp(){
     user=[];
     level++;
+    score = level * 10;
     let h3=document.querySelector('h3');
-    h3.innerText=`level ${level}`;
+    h3.innerText=`level ${level} | score ${score}`;
     // gameBegin(level);
     randomTile();
 }
@@ -114,12 +116,13 @@ function checkAns(idx){
 console.log("current level:",level)
 if(game[idx]===user[idx]){
     if(user.length==game.length){
+        score = level * 10;
         setTimeout(levelUp,1000);
     }
      }
      else{
         let h3=document.querySelector('h3');
-        h3.innerHTML=`khel khatam betaa! press any key to start. score:${level*10}`; 
+        h3.innerHTML=`khel khatam betaa! press any key to start. score:${score}`; 
         document.querySelector("body").style.backgroundColor="red";
         setTimeout(function(){
             document.querySelector("body").style.backgroundColor="white"},150);
@@ -131,4 +134,5 @@ function reset(){
     user=[];
     gameStarted=false;
     level=0;
+    score=0;
 }
